@@ -174,3 +174,52 @@ h1 {
   transform: translate(-50%, 0);
 
 }
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.full {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+  &__button {
+    padding: 10px 20px;
+    margin: 40px auto 0;
+    display: flex;
+    cursor: pointer;
+    border-radius: 6px;
+    outline: none;
+    transition: background-color 0.3s;
+    border: 1px solid #888888;
+    background-color: #F07427;
+    color: #fff;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #ad27f0;
+      }
+    }
+  }
+
+  img {
+    transition: transform 0.5s;
+    box-shadow: 0 0 15px #000;
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.nomatch {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
